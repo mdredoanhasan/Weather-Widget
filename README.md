@@ -1,5 +1,14 @@
 # React + Vite
 
+## Live site
+
+After the GitHub Pages workflow finishes, the app is available at:
+
+https://mdredoanhasan.github.io/Weather-Widget/
+
+In the repository settings, set **Pages > Build and deployment > Source** to
+**GitHub Actions**.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:

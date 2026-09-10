@@ -1,0 +1,142 @@
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 390px);
+}
+
+.info-heading {
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.info-eyebrow {
+  margin: 0;
+  color: #b15f35;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.info-caption {
+  margin: 3px 0 0;
+  color: #527086;
+  font-size: 14px;
+}
+
+.infobox > div {
+  width: 100%;
+}
+
+.infobox .MuiCard-root {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 45px rgba(28, 64, 96, 0.18);
+}
+
+.infobox .MuiCardMedia-root {
+  height: 190px;
+  filter: saturate(0.9);
+}
+
+.weather-card-content {
+  padding: 24px !important;
+}
+
+.city-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.city-name {
+  color: #12304a;
+  font-weight: 800;
+}
+
+.weather-description {
+  margin: 4px 0 0;
+  color: #527086;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.condition-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  flex: 0 0 48px;
+  border-radius: 50%;
+  color: #b15f35;
+  background: #fff1dc;
+}
+
+.condition-icon svg {
+  font-size: 28px;
+}
+
+.temperature-row {
+  display: flex;
+  align-items: flex-start;
+  margin: 18px 0 20px;
+  color: #12304a;
+}
+
+.temperature {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.temperature-unit {
+  margin: 4px 0 0 5px;
+  color: #527086;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.weather-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.weather-stat {
+  min-width: 0;
+  padding: 12px 8px;
+  border: 1px solid #e3edf0;
+  border-radius: 12px;
+  background: #f6faf9;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #7390a0;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.weather-stat strong {
+  display: block;
+  overflow-wrap: anywhere;
+  color: #29445b;
+  font-size: 13px;
+}
+
+@media (max-width: 420px) {
+  .weather-card-content {
+    padding: 20px !important;
+  }
+
+  .weather-stats {
+    grid-template-columns: 1fr;
+  }
+}

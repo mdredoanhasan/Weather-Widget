@@ -1,0 +1,26 @@
+:root {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #29445b;
+  background: #dcecf2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.55), transparent 44%),
+    linear-gradient(135deg, #dcecf2 0%, #b7d8e7 48%, #f4dfb8 100%);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  box-sizing: border-box;
+}

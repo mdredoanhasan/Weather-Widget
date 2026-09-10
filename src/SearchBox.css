@@ -1,0 +1,82 @@
+.weatherbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 34px;
+}
+
+.weatherbox form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: min(100%, 560px);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 14px 32px rgba(42, 82, 108, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.weatherbox .MuiTextField-root {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 12px;
+}
+
+.weatherbox .MuiOutlinedInput-root {
+  border-radius: 12px;
+}
+
+.weatherbox .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #145da0;
+}
+
+.weatherbox
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-width: 2px;
+  border-color: #145da0;
+}
+
+.weatherbox .MuiButton-root {
+  min-height: 56px;
+  padding-inline: 24px;
+  border-radius: 12px;
+  background: #145da0;
+  box-shadow: 0 8px 18px rgba(20, 93, 160, 0.25);
+  text-transform: none;
+  font-weight: 700;
+}
+
+.weatherbox .MuiButton-root:hover {
+  background: #0d477c;
+}
+
+.search-error {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 12px;
+  right: 12px;
+  margin: 0;
+  color: #a33a32;
+  font-size: 14px;
+  text-align: left;
+}
+
+@media (max-width: 560px) {
+  .weatherbox form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .weatherbox .MuiButton-root {
+    min-height: 48px;
+  }
+
+  .search-error {
+    top: calc(100% + 8px);
+  }
+}
